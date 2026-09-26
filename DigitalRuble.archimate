@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Digital Rouble" id="id-a331df3817ab4a859b595b8e4f558ec7" version="5.0.0">
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Digital Ruble" id="id-a331df3817ab4a859b595b8e4f558ec7" version="5.0.0">
   <folder name="Strategy" id="id-7422a03030024ef9ba872f4ff31794c8" type="strategy">
     <element xsi:type="archimate:Capability" name="1.1. Управление выпуском и изъятием цифровых рублей" id="id-e9fc674fe7c145ef95a8daab0a616206"/>
     <element xsi:type="archimate:Capability" name="1.1.1. Эмиссия цифровых рублей" id="id-feb07b81120d4dde911803150a413fbb"/>
@@ -10,8 +10,12 @@
     <element xsi:type="archimate:Capability" name="1.2.2. Лицензирование и надзор за деятельностью посредников" id="id-1877876478344c789993f070ff5255ba"/>
     <element xsi:type="archimate:Capability" name="1.2.3. Определение и изменение правил работы платформы" id="id-d91ddc6e75b54d3dbc22df33c07173b9"/>
     <element xsi:type="archimate:Capability" name="1.3. Управление инфраструктурой платежей" id="id-f9593809c0b04d6bb4a0f6365ab4af19"/>
-    <element xsi:type="archimate:Capability" name="1.3.1. Маршрутизация платежей через национальную систему платёжных карт" id="id-54998c7483384d71b99a14eaefea38b4"/>
-    <element xsi:type="archimate:Capability" name="1.3.2. Взаимодействие платформы с внешними системами" id="id-08ca987c7a154e34b78b9da6cba18d17"/>
+    <element xsi:type="archimate:Capability" name="1.3.1. Маршрутизация платежей через национальную систему платёжных карт" id="id-54998c7483384d71b99a14eaefea38b4">
+      <documentation>Универсальный QR</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="1.3.2. Взаимодействие платформы с внешними системами" id="id-08ca987c7a154e34b78b9da6cba18d17">
+      <documentation>казначейство, соцвыплаты</documentation>
+    </element>
     <element xsi:type="archimate:Capability" name="1.3.3. Обеспечение масштабируемости и отказоустойчивости платформы" id="id-1efb82ddeee84521bb71a78175cae3e3"/>
     <element xsi:type="archimate:Capability" name="2.1. Управление подключением клиентов" id="id-dc62a6ca83694c3d9bbbf90965921783"/>
     <element xsi:type="archimate:Capability" name="2.1.1. Идентификация клиентов (KYC)" id="id-1dad4acf8ade4244b03392e80c43c6fe"/>
@@ -23,18 +27,26 @@
     <element xsi:type="archimate:Capability" name="2.2.3. Блокирование и разблокирование кошельков" id="id-e2b66b62c83e41c7855eca838d41f090"/>
     <element xsi:type="archimate:Capability" name="2.2.4. Восстановление доступа к кошельку" id="id-b881c3e2b87d4fbab99ae4c990626643"/>
     <element xsi:type="archimate:Capability" name="2.3. Обеспечение доступа клиентов к цифровому рублю" id="id-1a53f2c1c5874abbac99fd1f8173a289"/>
-    <element xsi:type="archimate:Capability" name="2.3.1. Предоставление интерфейсов управления кошельком в каналах обслуживания" id="id-c3bca16a610a44dabe6cfd730ca6eeec"/>
-    <element xsi:type="archimate:Capability" name="2.3.2. Отображение цифрового рубля в клиентских витринах" id="id-76f168267d4e471ebc09c96c8a3db9b4"/>
+    <element xsi:type="archimate:Capability" name="2.3.1. Предоставление интерфейсов управления кошельком в каналах обслуживания" id="id-c3bca16a610a44dabe6cfd730ca6eeec">
+      <documentation>приложение, ДБО</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="2.3.2. Отображение цифрового рубля в клиентских витринах" id="id-76f168267d4e471ebc09c96c8a3db9b4">
+      <documentation>баланс, история</documentation>
+    </element>
     <element xsi:type="archimate:Capability" name="2.4. Управление инцидентами клиентов" id="id-1250c11116ec4fda9508e9e920099c6a"/>
     <element xsi:type="archimate:Capability" name="2.4.1. Рассмотрение претензий по операциям" id="id-397f98a29dc64b34be560c1c2d9c8c81"/>
     <element xsi:type="archimate:Capability" name="2.4.2. Возврат ошибочно списанных средств" id="id-b23b83fabe0240579246900b55495be7"/>
     <element xsi:type="archimate:Capability" name="2.4.3. Урегулирование споров между участниками платежа" id="id-c2ca183cc43c4c0fbb35262c6e9301d2"/>
     <element xsi:type="archimate:Capability" name="3.1. Обмен безналичных рублей на цифровые" id="id-c312a3faac884024a54472ef977bd8e7"/>
     <element xsi:type="archimate:Capability" name="3.1.1. Пополнение кошелька с безналичного счёта" id="id-4dab931a13394bed990c699d7663fc87"/>
-    <element xsi:type="archimate:Capability" name="3.1.2. Пополнение кошелька за наличные" id="id-5e75cae3bbf945ad830dc0badc6dc65b"/>
+    <element xsi:type="archimate:Capability" name="3.1.2. Пополнение кошелька за наличные" id="id-5e75cae3bbf945ad830dc0badc6dc65b">
+      <documentation>целевая, по мере появления механизма — банкоматы, агенты</documentation>
+    </element>
     <element xsi:type="archimate:Capability" name="3.2. Вывод цифровых рублей" id="id-7c9d0102f67c4500928330eb36154f30"/>
     <element xsi:type="archimate:Capability" name="3.2.1. Вывод средств с кошелька на счёт" id="id-7bfe611d76024406af9e619a8e92eac1"/>
-    <element xsi:type="archimate:Capability" name="3.2.2. Вывод цифровых рублей в наличные" id="id-3fc14ac484da46cabc7d3007811fe1bf"/>
+    <element xsi:type="archimate:Capability" name="3.2.2. Вывод цифровых рублей в наличные" id="id-3fc14ac484da46cabc7d3007811fe1bf">
+      <documentation>целевая, по мере появления механизма</documentation>
+    </element>
     <element xsi:type="archimate:Capability" name="3.3. Управление правилами конвертации" id="id-d23234f441a54a7da41aea1ac955c3e0"/>
     <element xsi:type="archimate:Capability" name="3.3.1. Управление лимитами конвертации для физических лиц" id="id-13c594f22fbb4cec969ee0cd761dbe50"/>
     <element xsi:type="archimate:Capability" name="3.3.2. Установление комиссий за конвертацию" id="id-e88bad2b4a27426ab48faf199342100b">
@@ -107,7 +119,9 @@
     <element xsi:type="archimate:Capability" name="9.2.2. Сверка операций посредник–платформа ЦБ" id="id-963f7cb1e67441aa98f3ef175bd07f2b"/>
     <element xsi:type="archimate:Capability" name="9.2.3. Сверка эквайринговых операций с платёжной инфраструктурой (НСПК)" id="id-93bab51032d2478e9a49de2c3ee7a447"/>
     <element xsi:type="archimate:Capability" name="9.3. Тарификация операций" id="id-d52cc9c8b3e64d57a520bfa5853b9818"/>
-    <element xsi:type="archimate:Capability" name="9.3.1. Применение тарифов платформы " id="id-4d598ef3fe6d4e44a9e5a42283fa7b89"/>
+    <element xsi:type="archimate:Capability" name="9.3.1. Применение тарифов платформы " id="id-4d598ef3fe6d4e44a9e5a42283fa7b89">
+      <documentation>0,3% для юрлиц-получателей, фиксированная комиссия за B2B</documentation>
+    </element>
     <element xsi:type="archimate:Capability" name="9.3.2. Установление собственных комиссий посредников" id="id-a9f2fbf9e3334ec59e2419451100b64f"/>
     <element xsi:type="archimate:Capability" name="9.4. Формирование отчётности" id="id-f0d3f46d5e0d41fc952bf493338b20cb"/>
     <element xsi:type="archimate:Capability" name="9.4.1. Отчётность для Банка России" id="id-44aec343d59a497789ff7c140f092dcf"/>
@@ -124,24 +138,34 @@
     <element xsi:type="archimate:Capability" name="10.3.2. Управление техническими инцидентами" id="id-fc5cdfa4f59646e3bae4ec284aa962d4"/>
     <element xsi:type="archimate:Capability" name="10.3.3. Тестирование и сертификация интеграций" id="id-86dc080b3b094c0eb985b11014d596fe"/>
     <element xsi:type="archimate:Capability" name="11.1. Формирование продуктовых предложений" id="id-753afff453bc4417a5f650bea22e510b"/>
-    <element xsi:type="archimate:Capability" name="11.1.1. Разработка продуктов на базе цифрового рубля (сервисы для клиентов)" id="id-6d2a1bf259c54360b57cd99eee303f44"/>
-    <element xsi:type="archimate:Capability" name="11.1.2. Планирование продуктовой линейки под новые возможности" id="id-d4c0fe2330dc4b0bb4347a0aba9c25ce"/>
+    <element xsi:type="archimate:Capability" name="11.1.1. Разработка продуктов на базе цифрового рубля (сервисы для клиентов)" id="id-6d2a1bf259c54360b57cd99eee303f44">
+      <documentation>Сервисы для клиентов</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="11.1.2. Планирование продуктовой линейки под новые возможности" id="id-d4c0fe2330dc4b0bb4347a0aba9c25ce">
+      <documentation>Офлайн, программируемость, трансграничные расчёты</documentation>
+    </element>
     <element xsi:type="archimate:Capability" name="11.2. Управление коммерческой политикой" id="id-af1413dbd74a42ffbffc9403e3e5dcbb"/>
     <element xsi:type="archimate:Capability" name="11.2.1. Ценообразование на услуги с цифровым рублём" id="id-9aa66ee530f748d48a112652538bff7d"/>
-    <element xsi:type="archimate:Capability" name="11.2.2. Стимулирование использования цифрового рубля" id="id-0012b9f47837498fb3e2d80f13ecc552"/>
+    <element xsi:type="archimate:Capability" name="11.2.2. Стимулирование использования цифрового рубля" id="id-0012b9f47837498fb3e2d80f13ecc552">
+      <documentation>Акции, лояльность</documentation>
+    </element>
     <element xsi:type="archimate:Capability" name="11.3. Анализ рынка и данных" id="id-f6bfd2bc83204def82346c73e45ed0e8"/>
-    <element xsi:type="archimate:Capability" name="11.3.1. Анализ динамики оборота и adoption" id="id-b5c739e535df402395d8787ef2cc03a2"/>
-    <element xsi:type="archimate:Capability" name="11.3.2. Оценка эффектов для экономики" id="id-f423a627114e48e5bb958953ea90a04d"/>
-    <element xsi:type="archimate:Capability" name="3.4. Управление ликвидностью цифровых рублей" id="id-e8913173f5c84ecbb1b33b7e13f46b9b"/>
+    <element xsi:type="archimate:Capability" name="11.3.1. Анализ динамики оборота и адаптация" id="id-b5c739e535df402395d8787ef2cc03a2"/>
+    <element xsi:type="archimate:Capability" name="11.3.2. Оценка эффектов для экономики" id="id-f423a627114e48e5bb958953ea90a04d">
+      <documentation>M1, скорость обращения денег, теневая экономика</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="3.4. Управление ликвидностью цифровых рублей" id="id-e8913173f5c84ecbb1b33b7e13f46b9b">
+      <documentation>Критично для банков-посредников: управление остатками на собственных счетах в платформе ЦБ (пул выпущенных цифровых рублей).</documentation>
+    </element>
     <element xsi:type="archimate:Capability" name="3.4.1. Пополнение пула ликвидности на счёте в платформе ЦБ" id="id-a71acee839d64fc69e03e19bd79d7c7c">
-      <documentation>выпуск цифровых рублей под клиентский спрос</documentation>
+      <documentation>Выпуск цифровых рублей под клиентский спрос</documentation>
     </element>
     <element xsi:type="archimate:Capability" name="3.4.2. Изъятие избыточной ликвидности из платформы" id="id-0a951de3e0164201acb7284ad960af12">
-      <documentation>обратная конвертация в безналичные рубли</documentation>
+      <documentation>Обратная конвертация в безналичные рубли</documentation>
     </element>
     <element xsi:type="archimate:Capability" name="3.4.3. Прогнозирование спроса клиентов на цифровые рубли и планирование объёма пула" id="id-a7299b8963d4435fa5e17926cfb3daae"/>
     <element xsi:type="archimate:Capability" name="3.4.4. Установление внутренних лимитов ликвидности цифровых рублей" id="id-64bd353bb7a8442f8dd1cf2695d4cc73">
-      <documentation>рогнозирование спроса будет болевой точкой банков на первом этапе (нет истории оборота, лимиты пополнения клиентских кошельков по 300 тыс./мес)</documentation>
+      <documentation>Прогнозирование спроса будет болевой точкой банков на первом этапе (нет истории оборота, лимиты пополнения клиентских кошельков по 300 тыс./мес)</documentation>
     </element>
     <element xsi:type="archimate:Capability" name="6.1. Управление жизненным циклом шаблонов условий" id="id-44463cc5e79f4c9a94aa841e34ce1174">
       <documentation>Про шаблон (типовую конструкцию, который банк/компания готовит, тестирует и регистрирует один раз, как «программный продукт»).</documentation>
@@ -150,28 +174,66 @@
       <documentation>По сути, речь о смарт-контрактах.</documentation>
     </element>
     <element xsi:type="archimate:Capability" name="6.1.2. Тестирование и верификация шаблонов" id="id-7df5bb64a32d44b487cd2b3e7d3fb115">
-      <documentation>в тестовой среде платформы ЦБ</documentation>
+      <documentation>В тестовой среде платформы ЦБ</documentation>
     </element>
     <element xsi:type="archimate:Capability" name="6.1.3. Регистрация и сертификация шаблонов в платформе" id="id-1c5ccd3f9527406abe689fd468004a9b"/>
     <element xsi:type="archimate:Capability" name="6.1.4. Версионирование, изменение и отзыв шаблонов" id="id-98e4733657e9470a86e8960586eca169"/>
   </folder>
-  <folder name="Business" id="id-9dad819b09264d74801f864192d88021" type="business"/>
-  <folder name="Application" id="id-ec47b92e3f954fa5ac40267082462bc2" type="application"/>
+  <folder name="Business" id="id-9dad819b09264d74801f864192d88021" type="business">
+    <element xsi:type="archimate:BusinessActor" name="Банк РФ" id="id-72de422316624e338a5a4060b09d2875"/>
+    <element xsi:type="archimate:BusinessActor" name="Банк" id="id-ebba3ea7fc504ac59fdee30d9f3a6a34"/>
+    <element xsi:type="archimate:BusinessActor" name="Физлица" id="id-a7f5ea175d4049c8bb5f2c333a18f2dd"/>
+    <element xsi:type="archimate:BusinessActor" name="Юрлица" id="id-2915b2a6ed05406883858430bc7d5c82"/>
+    <element xsi:type="archimate:BusinessRole" name="Финансовый посредник (ФП)" id="id-e21290bf975049299ca666b89e9d7f25"/>
+    <element xsi:type="archimate:BusinessRole" name="Оператор платформы цифрового рубля (Оператор ПлЦР)" id="id-cbf5d66becba42368ac6945a9856e3c2"/>
+    <element xsi:type="archimate:BusinessRole" name="Клиент ФЛ" id="id-ace019a5bea349e4b2c91dd4747d41c6"/>
+    <element xsi:type="archimate:BusinessRole" name="Клиент ЮЛ" id="id-277cbce0cccc4680a943cd9b3b4dbc48"/>
+    <element xsi:type="archimate:BusinessActor" name="ЕСИА" id="id-9b38a23806034fbd870e9cb9c790c32d"/>
+    <element xsi:type="archimate:BusinessActor" name="ЕГРЮЛ" id="id-220870bd818c4b909403d17eabe0f1b4"/>
+    <element xsi:type="archimate:BusinessActor" name="НСПК" id="id-1a850be60f5e411284423a290b535295"/>
+    <element xsi:type="archimate:BusinessRole" name="Источник достоверных данных о ФЛ" id="id-66b8a005ee5b410785a5202b1b3d79a2"/>
+    <element xsi:type="archimate:BusinessRole" name="Источник достоверных данных об ЮЛ" id="id-ada1aa7767924bfcb49e81f2d27cdf32"/>
+    <element xsi:type="archimate:BusinessRole" name="Провайдер эквайринговых и клиринговых услуг" id="id-2c7853cd8d9540d78cb59b0dfb40d1ca"/>
+    <element xsi:type="archimate:BusinessProcess" name="Открытие цифрового кошелька" id="id-c26dccba70b548b0b8b1dd60e35cf207"/>
+    <element xsi:type="archimate:BusinessProcess" name="Октрытие кошелька ФЛ" id="id-e55c4f8c86614635a55a994c0563bd83"/>
+    <element xsi:type="archimate:BusinessProcess" name="Открытие кошелька ЮЛ" id="id-f117ed4769204114a89428bf3458948b"/>
+    <element xsi:type="archimate:BusinessEvent" name="Запрос клиента" id="id-5a40853684c646afaac4eaa141635f69"/>
+    <element xsi:type="archimate:BusinessEvent" name="Получение данных из ЕСИА/ЕГРЮЛ" id="id-e52e4efd1e9546f49f35a5d7ccfc15e2"/>
+    <element xsi:type="archimate:BusinessObject" name="Реквизиты клиента" id="id-d4ba7c1ce9a94a4aa293a8d9318d285d"/>
+  </folder>
+  <folder name="Application" id="id-ec47b92e3f954fa5ac40267082462bc2" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Платформа цифрового рубля (ПлЦР)" id="id-27a9f3f1d48a4b6095574f83ba5ce3a3"/>
+    <element xsi:type="archimate:ApplicationComponent" name="АБС / Процессинг ФП" id="id-832209e59715472da0f3f71dd298f61c"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Сервис верификации данных ЕСИА" id="id-024403b4e4554a7384e938afcc4e68ea"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Сервис проверки реквизитов ЕГРЮЛ" id="id-9a2768a269a14df7af32e1c785d280bf"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Сервис маршрутизации эквайринговых операций" id="id-2e670a9346b745408e735aa098015457"/>
+  </folder>
   <folder name="Technology &amp; Physical" id="id-5db205c81f0441e2ad4f38d6fa172992" type="technology"/>
-  <folder name="Motivation" id="id-cd6327c84aec46b9bb4a4891065d7d08" type="motivation"/>
+  <folder name="Motivation" id="id-cd6327c84aec46b9bb4a4891065d7d08" type="motivation">
+    <element xsi:type="archimate:Constraint" name="Расхождение данных = блокировка процедуры" id="id-4475c16bbbaa40188166e78fd147dcbe"/>
+  </folder>
   <folder name="Implementation &amp; Migration" id="id-5a876c1c39f64f28ad39b841827f9c61" type="implementation_migration"/>
   <folder name="Other" id="id-ca40b75e299f489f9321c08e3d0932ae" type="other">
-    <element xsi:type="archimate:Grouping" name="1. Эмиссия и управление платформой обращения" id="id-154e16cb5f90434aa6e223db69b239ec"/>
+    <element xsi:type="archimate:Grouping" name="1. Эмиссия и управление платформой обращения" id="id-154e16cb5f90434aa6e223db69b239ec">
+      <documentation>Экосистемный домен — исполняется Банком России как эмитентом и оператором платформы.</documentation>
+    </element>
     <element xsi:type="archimate:Grouping" name="2. Обслуживание владельцев цифровых рублей" id="id-761a8ff096954693b5aa8ee33a61d230"/>
     <element xsi:type="archimate:Grouping" name="3. Конвертация форм рубля" id="id-706bb79c68d74222a06b11469359f368"/>
     <element xsi:type="archimate:Grouping" name="4. Выполнение платежей и переводов" id="id-ae7dcae6a54945a1b3d3ba176b016def"/>
-    <element xsi:type="archimate:Grouping" name="5. Выполнение государственных выплат" id="id-1011778299944f6ba362304e048a6af5"/>
-    <element xsi:type="archimate:Grouping" name="6. Применение программируемых условий расчётов" id="id-3e4dfcd1251940198164e52db3a33039"/>
-    <element xsi:type="archimate:Grouping" name="7. Выполнение операций без сети (офлайн)" id="id-e6f6b77e35bd4a178c81e1f5cc72c787"/>
+    <element xsi:type="archimate:Grouping" name="5. Выполнение государственных выплат" id="id-1011778299944f6ba362304e048a6af5">
+      <documentation>Экосистемный домен — исполняется государством (казначейство, органы соцзащиты) совместно с платформой ЦБ и посредниками.</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="6. Применение программируемых условий расчётов" id="id-3e4dfcd1251940198164e52db3a33039">
+      <documentation>Терминология ЦБ — «программируемые условия» / «шаблоны условий» (близко к смарт-контрактам).</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="7. Выполнение операций без сети (офлайн)" id="id-e6f6b77e35bd4a178c81e1f5cc72c787">
+      <documentation>Экосистемный домен, находится в разработке у ЦБ.</documentation>
+    </element>
     <element xsi:type="archimate:Grouping" name="8. Обеспечение комплаенса и безопасности" id="id-c984688680884d1789e5befe73ee68be"/>
     <element xsi:type="archimate:Grouping" name="9. Учёт, тарификация и отчётность" id="id-e31bd2092c564b6da6b8158b16e1dedd"/>
     <element xsi:type="archimate:Grouping" name="10. Технологическая интеграция и эксплуатация" id="id-00b019647fad429ea566175f40035b84"/>
     <element xsi:type="archimate:Grouping" name="11. Развитие продукта и рынка" id="id-f46b7a48d65a407286cb6f203d9daed3"/>
+    <element xsi:type="archimate:Grouping" name="Экосистема цифрового рубля" id="id-cd9091fe1536430996ca351bfbb72269"/>
   </folder>
   <folder name="Relations" id="id-130f9fa880d84c5d97c99aeb30f347eb" type="relations">
     <element xsi:type="archimate:CompositionRelationship" id="id-644608c714c745f59817a9a98cc67d97" source="id-154e16cb5f90434aa6e223db69b239ec" target="id-e9fc674fe7c145ef95a8daab0a616206"/>
@@ -309,6 +371,45 @@
     <element xsi:type="archimate:CompositionRelationship" id="id-0e9fd8994b4b4b778c4a149cd746334a" source="id-44463cc5e79f4c9a94aa841e34ce1174" target="id-7df5bb64a32d44b487cd2b3e7d3fb115"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-7503af55e5bc43c69a5b4e1384b8d1ac" source="id-44463cc5e79f4c9a94aa841e34ce1174" target="id-98e4733657e9470a86e8960586eca169"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-9258fcf986fa4ccfb6a6f3f3903dc22a" source="id-3e4dfcd1251940198164e52db3a33039" target="id-44463cc5e79f4c9a94aa841e34ce1174"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-e69cc620525348cd9e5337318806c996" source="id-2915b2a6ed05406883858430bc7d5c82" target="id-277cbce0cccc4680a943cd9b3b4dbc48"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-17fb715aa01f42aab6474f5b939a3c89" source="id-a7f5ea175d4049c8bb5f2c333a18f2dd" target="id-ace019a5bea349e4b2c91dd4747d41c6"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-fafad8e1a3be4c6d8cbdbf9e4c324cfd" source="id-ebba3ea7fc504ac59fdee30d9f3a6a34" target="id-e21290bf975049299ca666b89e9d7f25"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-d659413974a34765b4fcdb863d44b773" source="id-72de422316624e338a5a4060b09d2875" target="id-cbf5d66becba42368ac6945a9856e3c2"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-2d409c1f80924df18fe9d9b93f595443" source="id-9b38a23806034fbd870e9cb9c790c32d" target="id-66b8a005ee5b410785a5202b1b3d79a2"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-30f8ff85236e4066938c8106cbd745a8" source="id-220870bd818c4b909403d17eabe0f1b4" target="id-ada1aa7767924bfcb49e81f2d27cdf32"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-5ac141311c9a419cb1d1240b6d9deffc" source="id-1a850be60f5e411284423a290b535295" target="id-2c7853cd8d9540d78cb59b0dfb40d1ca"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-15f4c634609043b2b2497a6f7ac762d5" source="id-832209e59715472da0f3f71dd298f61c" target="id-277cbce0cccc4680a943cd9b3b4dbc48"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-f8faaf8817144333a41e385425af0ed2" source="id-832209e59715472da0f3f71dd298f61c" target="id-ace019a5bea349e4b2c91dd4747d41c6"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-5330f1087aa84ec0bee737a032ef41c3" source="id-832209e59715472da0f3f71dd298f61c" target="id-27a9f3f1d48a4b6095574f83ba5ce3a3"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-24fa6ddfafbb4ba8bb0118ce0ac256ac" source="id-2e670a9346b745408e735aa098015457" target="id-27a9f3f1d48a4b6095574f83ba5ce3a3"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-e0f276830ece42119f4bff0e16d70c4e" source="id-9a2768a269a14df7af32e1c785d280bf" target="id-27a9f3f1d48a4b6095574f83ba5ce3a3"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-8a20f5ba1e214589bef94fd4ce27c60a" source="id-024403b4e4554a7384e938afcc4e68ea" target="id-27a9f3f1d48a4b6095574f83ba5ce3a3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d00275b08b774b53a939e37f51e7bf74" source="id-cd9091fe1536430996ca351bfbb72269" target="id-2e670a9346b745408e735aa098015457"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7cf3c94c1e06444191ae47fde5d5daa1" source="id-cd9091fe1536430996ca351bfbb72269" target="id-ebba3ea7fc504ac59fdee30d9f3a6a34"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-31799d52f6a945bc9890f9775817af57" source="id-cd9091fe1536430996ca351bfbb72269" target="id-277cbce0cccc4680a943cd9b3b4dbc48"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-1000937eabb4480a9a3b4aefcf6aba05" source="id-cd9091fe1536430996ca351bfbb72269" target="id-e21290bf975049299ca666b89e9d7f25"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-a27eeff69106403c8c8f421e980e5681" source="id-cd9091fe1536430996ca351bfbb72269" target="id-2915b2a6ed05406883858430bc7d5c82"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d404d559d0024f8b9655ebccb9e987dd" source="id-cd9091fe1536430996ca351bfbb72269" target="id-1a850be60f5e411284423a290b535295"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3e3455a3b8ec484ba663c3b69e6c4774" source="id-cd9091fe1536430996ca351bfbb72269" target="id-220870bd818c4b909403d17eabe0f1b4"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d134f7392b404eb9aaeda4c2ff4c4adf" source="id-cd9091fe1536430996ca351bfbb72269" target="id-024403b4e4554a7384e938afcc4e68ea"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-170c79d095664df4aaa678a1417db2be" source="id-cd9091fe1536430996ca351bfbb72269" target="id-cbf5d66becba42368ac6945a9856e3c2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ad6d739d67ac49f685582e95d137c214" source="id-cd9091fe1536430996ca351bfbb72269" target="id-66b8a005ee5b410785a5202b1b3d79a2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-695eb4a3679c4bbaace39f1592944ac4" source="id-cd9091fe1536430996ca351bfbb72269" target="id-27a9f3f1d48a4b6095574f83ba5ce3a3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-99e87a22df5f444885038f13b124db94" source="id-cd9091fe1536430996ca351bfbb72269" target="id-832209e59715472da0f3f71dd298f61c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-a99236a96a6b4646a41712cb51cd7335" source="id-cd9091fe1536430996ca351bfbb72269" target="id-ada1aa7767924bfcb49e81f2d27cdf32"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3c0621cb28794caba66c790be0f3a164" source="id-cd9091fe1536430996ca351bfbb72269" target="id-72de422316624e338a5a4060b09d2875"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-fa8bc8c4d56542438ec1b3cdf8b2b1fe" source="id-cd9091fe1536430996ca351bfbb72269" target="id-ace019a5bea349e4b2c91dd4747d41c6"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d734abe1dbb54abbb4dbbe44a48e2b50" source="id-cd9091fe1536430996ca351bfbb72269" target="id-9b38a23806034fbd870e9cb9c790c32d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-fb59d58015a24a86bb4101b5622f4a53" source="id-cd9091fe1536430996ca351bfbb72269" target="id-2c7853cd8d9540d78cb59b0dfb40d1ca"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8322a6205c3f4bbc92c8296bf867b6d5" source="id-cd9091fe1536430996ca351bfbb72269" target="id-a7f5ea175d4049c8bb5f2c333a18f2dd"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-eece48c47a8b408aaf125267bb8fed19" source="id-cd9091fe1536430996ca351bfbb72269" target="id-9a2768a269a14df7af32e1c785d280bf"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-6d561c484f8241cea02272f00dae8178" source="id-cbf5d66becba42368ac6945a9856e3c2" target="id-27a9f3f1d48a4b6095574f83ba5ce3a3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-5adbfad8a6a24189a384486fa346f1b9" source="id-e21290bf975049299ca666b89e9d7f25" target="id-832209e59715472da0f3f71dd298f61c"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-7373c9161d984b0da8485e119117456a" source="id-024403b4e4554a7384e938afcc4e68ea" target="id-66b8a005ee5b410785a5202b1b3d79a2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-52403de8dbb6489dabcff337ff19d018" source="id-9a2768a269a14df7af32e1c785d280bf" target="id-ada1aa7767924bfcb49e81f2d27cdf32"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-91d1d68224034c1d883dd1ff0807be8f" source="id-2e670a9346b745408e735aa098015457" target="id-2c7853cd8d9540d78cb59b0dfb40d1ca"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-72b3de7fb5bd4cfbb03730ce75a20955" source="id-c26dccba70b548b0b8b1dd60e35cf207" target="id-e55c4f8c86614635a55a994c0563bd83"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ca439ad5bc62470d96567700aaebf783" source="id-c26dccba70b548b0b8b1dd60e35cf207" target="id-f117ed4769204114a89428bf3458948b"/>
   </folder>
   <folder name="Views" id="id-2650cf38a8e546abb5a18a495aed6fec" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="01 Rference Model" id="id-4cdd5b9f6e94454c94d20a6ee2db6eba">
